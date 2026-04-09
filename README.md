@@ -1,42 +1,32 @@
-# Eurostat Data Study
+# Eurostat Visual Study
 
-A data analysis project based on Eurostat datasets, focused on exploring trends, patterns, and useful insights through reproducible data workflows.
+This repository contains a notebook-based visual analysis of Eurostat asylum application data (2013–2022), including preprocessing, trend analysis, and clustering.
 
-## Project Overview
+## Final Report
 
-This repository contains:
-- data loading and preprocessing steps
-- exploratory analysis
-- visualizations and interpretation of key findings
+The main deliverable is available here:
 
-The goal is to present a clear, structured analysis that can be useful for anyone interested in European statistical data.
+- [report.pdf](./report.pdf)
 
-## Repository Structure
+## Project Structure
 
-- `data/` – input or processed datasets (if included)
-- `src/` – analysis scripts / source code
-- `figures/` – generated plots and visual outputs
-- `report/` – summary outputs or final interpretation (if applicable)
+- `1_preprocessing.ipynb` – data loading, cleaning, and preparation
+- `2_decade_shift.ipynb` – decade-level trend and shift analysis
+- `3_intake_impact.ipynb` – analysis of intake-related impacts
+- `4_clustering_multivals.ipynb` – multi-variable clustering exploration
+- `report.pdf` – final write-up of methods, visuals, and findings
+- `requirements.txt` – Python dependencies
 
-> Adjust section names to match your actual project layout.
+## Data Source
 
-## Requirements
+Eurostat table: `migr_asyappctza`  
+https://ec.europa.eu/eurostat/databrowser/view/migr_asyappctza/default/table?lang=en&category=migr.migr_asy.migr_asyapp
 
-List the tools/libraries needed to run the project (for example Python version and dependencies).
+## Setup
 
-## How to Run
-
-1. Clone the repository  
-2. Install dependencies  
-3. Run the analysis scripts or notebook(s)
-
-## Results
-
-Briefly summarize the main outcomes, e.g.:
-- key trend identified
-- notable comparison across countries/years
-- main visualization highlights
-
-## Notes
-
-This is a study project intended for learning and practical data analysis demonstration.
+1. Create and activate a Python environment.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Open and run the notebooks in order (`1_` to `4_`).
